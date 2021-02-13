@@ -1,27 +1,22 @@
-#container {
+.btn{
+  padding: 32px;
+  color: #dd1313;
+  background-color: #333333; 
   text-align: center;
-
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+  border-radius: 5px;
 }
 
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
+.pantalla{
+  padding: 32px;
+  color: #ffffff;
+  background-color: green;
+  text-align: right;
+  border-radius: 5px;
 }
 
-#container p {
-  font-size: 16px;
-  line-height: 22px;
-
-  color: #8c8c8c;
-
-  margin: 0;
-}
-
-#container a {
-  text-decoration: none;
+.oper{
+  background-color: red;
+  padding: 32px;
+  color: #333333;
+  border-radius: 5px;
 }
