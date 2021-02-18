@@ -13,7 +13,7 @@
     </ion-row>
     <ion-row>
       <ion-col>
-        <div (click)="num('AC')" class="oper">AC</div>
+        <div (click)="clear()" class="oper">AC</div>
       </ion-col>
       <ion-col>
         <div class="oper">+/-</div>
@@ -22,7 +22,19 @@
         <div class="oper">%</div>
       </ion-col>
       <ion-col>
-        <div class="oper">/</div>
+        <div (click)="operation('/')" class="oper">/</div>
+      </ion-col>
+      <ion-col>
+        <div (click)="pi()" class="oper">π</div>
+      </ion-col>
+      <ion-col>
+        <div (click)="sen()" class="oper">sen</div>
+      </ion-col>
+      <ion-col>
+        <div class="oper">cos</div>
+      </ion-col>
+      <ion-col>
+        <div (click)="operation('/')" class="oper">tan</div>
       </ion-col>
       <ion-col>
         <div (click)="num(7)" class="btn">7</div>
@@ -34,7 +46,7 @@
         <div (click)="num(9)" class="btn">9</div>
       </ion-col>
       <ion-col>
-        <div class="oper">x</div>
+        <div (click)="operation('*')" class="oper">*</div>
       </ion-col>
       <ion-col>
         <div (click)="num(4)" class="btn">4</div>
@@ -46,7 +58,7 @@
         <div (click)="num(6)" class="btn">6</div>
       </ion-col>
       <ion-col>
-        <div class="oper">-</div>
+        <div (click)="operation('-')" class="oper">-</div>
       </ion-col>
       <ion-col>
         <div size="3" (click)="num(1)" class="btn">1</div>
@@ -58,7 +70,7 @@
         <div size="3" (click)="num(3)" class="btn">3</div>
       </ion-col>
       <ion-col>
-        <div class="oper">+</div>
+        <div (click)="operation('+')" class="oper">+</div>
       </ion-col>
       <ion-col size="6">
         <div (click)="num(0)" class="btn">0</div>
@@ -67,7 +79,7 @@
         <div class="btn">,</div>
       </ion-col>
       <ion-col>
-        <div class="oper">=</div>
+        <div (click)="equal()" class="oper">=</div>
       </ion-col>
     </ion-row>
   </ion-grid>
